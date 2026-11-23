@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b16">
+<title>Unblocked-Arcade | Play Games</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#33246b55,transparent 36%),radial-gradient(ellipse at 95% 15%,#17628b44,transparent 32%),#090b16;color:#f4f6ff;font-family:Arial,system-ui,sans-serif}
+header{background:#0c1020eF;border-bottom:1px solid #303958;padding:15px max(20px,calc((100% - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
+.brand{font-weight:900;letter-spacing:1px;font-size:20px}.pill,.tag{background:#222d50;color:#b9c9ff;border-radius:20px;padding:7px 11px;font-size:11px;white-space:nowrap}
+main{max-width:1120px;margin:auto;padding:35px 22px 55px}.hero{padding:24px 0 38px;display:flex;gap:25px;align-items:center;justify-content:space-between}
+.eyebrow{color:#9cb4ff;font-weight:bold;letter-spacing:2px;font-size:12px}h1{font-size:clamp(38px,6vw,64px);line-height:1.02;margin:12px 0}.gradient{background:linear-gradient(90deg,#67d5ff,#a77bff);color:transparent;background-clip:text}
+p{color:#aab3d0;line-height:1.55}.hero p{max-width:590px}.heroart{font-size:100px;padding:30px 55px;border-radius:25px;background:linear-gradient(135deg,#1d3e68,#41285e);border:1px solid #5966a0}
+.search{display:flex;gap:10px;margin-top:18px;max-width:620px}.search input{flex:1;min-width:0;background:#11172a;border:1px solid #3b4568;border-radius:10px;padding:13px;color:white;font-size:16px;outline:none}.search input:focus{border-color:#67baff}
+h2{margin:0 0 7px;font-size:25px}.sub{margin:0 0 18px;font-size:14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{cursor:pointer}.filters button{background:#1b2340;color:#c5cce4;border:1px solid #394466;border-radius:22px;padding:9px 14px}.filters button.active,.filters button:hover{background:#354879;color:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(160deg,#171e35,#111526);border:1px solid #303958;border-radius:16px;overflow:hidden;transition:.18s;min-width:0}.card:hover{transform:translateY(-4px);border-color:#7183d4;box-shadow:0 12px 30px #0005}
+.thumb{height:135px;display:flex;align-items:center;justify-content:center;position:relative;font-size:62px;overflow:hidden}.thumb span{filter:drop-shadow(0 7px 12px #0008)}.thumb small{position:absolute;bottom:10px;right:11px;font-size:10px;letter-spacing:1px;color:#ffffffbd;font-weight:bold}
+.racing{background:linear-gradient(135deg,#14506c,#30205f)}.sports{background:linear-gradient(135deg,#155b55,#1d3569)}.action{background:linear-gradient(135deg,#65325c,#30245d)}.sandbox{background:linear-gradient(135deg,#365c35,#254b68)}
+.cardbody{padding:15px}.card h3{margin:0;font-size:17px}.card p{font-size:13px;min-height:40px;margin:8px 0 14px}.foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.play{display:inline-block;text-decoration:none;border-radius:9px;padding:10px 13px;background:linear-gradient(100deg,#397de8,#875ce7);color:white;font-weight:bold;font-size:12px;white-space:nowrap}.play:hover{filter:brightness(1.15)}
+#empty{display:none;color:#abb4d0;padding:25px;text-align:center;border:1px dashed #41496a;border-radius:12px}.note{margin-top:38px;background:#11172a;border:1px solid #303958;padding:18px;border-radius:13px;color:#aab3d0;font-size:13px;line-height:1.6}footer{text-align:center;color:#7782a5;padding:22px;border-top:1px solid #202943;font-size:12px}
+@media(max-width:760px){.heroart{font-size:75px;padding:25px 35px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){header{padding:13px 15px}.brand{font-size:15px}.pill{font-size:9px}main{padding:25px 15px}.heroart{display:none}.grid{grid-template-columns:1fr}.search{flex-direction:column}.search button{padding:13px}}
+</style>
+</head>
+<body>
+<header><div class="brand">🎮 UNBLOCKED-ARCADE</div><span class="pill">13 GAMES · FREE TO PLAY</span></header>
+<main>
+<section class="hero"><div>
+<div class="eyebrow">PRESS PLAY. HAVE FUN.</div>
+<h1>YOUR NEXT<br><span class="gradient">GAME STARTS HERE.</span></h1>
+<p>Find your next favorite. Race, flip, compete, and explore a growing collection of browser games.</p>
+<div class="search"><input id="search" type="search" placeholder="Search games..." aria-label="Search games"><button class="play" onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">FIND A GAME ↓</button></div>
+</div><div class="heroart">🕹️</div></section>
+<section id="games"><h2>🔥 Game Library</h2><p class="sub">Choose a category or search for a game.</p>
+<div class="filters">
+<button class="active" data-filter="All">All Games</button><button data-filter="Racing">Racing</button><button data-filter="Sports">Sports</button><button data-filter="Action">Action</button><button data-filter="Sandbox">Sandbox</button>
+</div>
+<div class="grid" id="grid"><article class="card" data-name="minecraft eaglercraft" data-category="Sandbox">
+      <div class="thumb sandbox"><span>⛏️</span><small>SANDBOX</small></div>
+      <div class="cardbody"><h3>Minecraft</h3><p>Explore, build, and survive in Eaglercraft 26.2.</p>
+      <div class="foot"><span class="tag">SANDBOX</span><a class="play" href="./minecraft.html">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="slope" data-category="Racing">
+      <div class="thumb racing"><span>🏂</span><small>RACING</small></div>
+      <div class="cardbody"><h3>Slope</h3><p>Roll through a neon 3D course and dodge the edges.</p>
+      <div class="foot"><span class="tag">RACING</span><a class="play" href="https://gplus.im/game/slope-unblocked" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="tunnel rush" data-category="Racing">
+      <div class="thumb racing"><span>🌀</span><small>RACING</small></div>
+      <div class="cardbody"><h3>Tunnel Rush</h3><p>Dodge barriers inside a fast-moving neon tunnel.</p>
+      <div class="foot"><span class="tag">RACING</span><a class="play" href="https://gplus.im/game/tunnel-rush" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="drift hunters" data-category="Racing">
+      <div class="thumb racing"><span>🏎️</span><small>RACING</small></div>
+      <div class="cardbody"><h3>Drift Hunters</h3><p>Take corners sideways and build your drift score.</p>
+      <div class="foot"><span class="tag">RACING</span><a class="play" href="https://gplus.im/game/drift-hunters" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="moto x3m winter" data-category="Racing">
+      <div class="thumb racing"><span>🏍️</span><small>RACING</small></div>
+      <div class="cardbody"><h3>Moto X3M Winter</h3><p>Race a dirt bike through icy stunt tracks.</p>
+      <div class="foot"><span class="tag">RACING</span><a class="play" href="https://gplus.im/game/moto-x3m-winter-unblocked" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="wacky flip" data-category="Sports">
+      <div class="thumb sports"><span>🤸</span><small>SPORTS</small></div>
+      <div class="cardbody"><h3>Wacky Flip</h3><p>Time your flips and try to land perfectly.</p>
+      <div class="foot"><span class="tag">SPORTS</span><a class="play" href="https://gplus.im/game/wacky-flip" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="basket random" data-category="Sports">
+      <div class="thumb sports"><span>🏀</span><small>SPORTS</small></div>
+      <div class="cardbody"><h3>Basket Random</h3><p>Play chaotic basketball with unpredictable physics.</p>
+      <div class="foot"><span class="tag">SPORTS</span><a class="play" href="https://gplus.im/game/basket-random" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="basket bros" data-category="Sports">
+      <div class="thumb sports"><span>⛹️</span><small>SPORTS</small></div>
+      <div class="cardbody"><h3>Basket Bros</h3><p>Challenge an opponent in arcade basketball.</p>
+      <div class="foot"><span class="tag">SPORTS</span><a class="play" href="https://gplus.im/game/basket-bros" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="stickman hook" data-category="Action">
+      <div class="thumb action"><span>🪝</span><small>ACTION</small></div>
+      <div class="cardbody"><h3>Stickman Hook</h3><p>Swing from hook to hook and fly through levels.</p>
+      <div class="foot"><span class="tag">ACTION</span><a class="play" href="https://gplus.im/game/stickman-hook" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="rooftop snipers" data-category="Action">
+      <div class="thumb action"><span>🤠</span><small>ACTION</small></div>
+      <div class="cardbody"><h3>Rooftop Snipers</h3><p>A quick two-player rooftop duel.</p>
+      <div class="foot"><span class="tag">ACTION</span><a class="play" href="https://gplus.im/game/rooftop-snipers-unblocked" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="1v1.lol" data-category="Action">
+      <div class="thumb action"><span>🎯</span><small>ACTION</small></div>
+      <div class="cardbody"><h3>1v1.LOL</h3><p>Build, move, and compete in quick arena battles.</p>
+      <div class="foot"><span class="tag">ACTION</span><a class="play" href="https://gplus.im/game/1v1-lol" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="happy wheels" data-category="Action">
+      <div class="thumb action"><span>🚴</span><small>ACTION</small></div>
+      <div class="cardbody"><h3>Happy Wheels</h3><p>Navigate tricky obstacle courses and physics levels.</p>
+      <div class="foot"><span class="tag">ACTION</span><a class="play" href="https://gplus.im/game/happy-wheels" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article>
+<article class="card" data-name="gun spin" data-category="Action">
+      <div class="thumb action"><span>🔫</span><small>ACTION</small></div>
+      <div class="cardbody"><h3>Gun Spin</h3><p>Use recoil and timing to propel through levels.</p>
+      <div class="foot"><span class="tag">ACTION</span><a class="play" href="https://gplus.im/game/guns-pin-unblocked" target="_blank" rel="noopener noreferrer">PLAY NOW ↗</a></div></div>
+    </article></div><div id="empty">No games found. Try another search or category.</div>
+</section>
+<div class="note"><b style="color:white">About Unblocked-Arcade</b><br>Unblocked-Arcade is an independent game directory. Minecraft is included as a separate game file in this website. The other games open on G+ Games in a new tab and are hosted by that third-party site. Game availability depends on the game provider and the network you're using.</div>
+</main>
+<footer>© <span id="year"></span> Unblocked-Arcade · Game names and trademarks belong to their respective owners.</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+let active='All';
+function filterCards(){
+ const q=document.getElementById('search').value.toLowerCase().trim();let count=0;
+ document.querySelectorAll('.card').forEach(card=>{
+  const nameOK=card.dataset.name.includes(q);
+  const categoryOK=active==='All'||card.dataset.category===active;
+  card.style.display=nameOK&&categoryOK?'':'none';if(nameOK&&categoryOK)count++;
+ });
+ document.getElementById('empty').style.display=count?'none':'block';
+}
+document.getElementById('search').addEventListener('input',filterCards);
+document.querySelectorAll('.filters button').forEach(button=>button.addEventListener('click',()=>{
+ document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
+ button.classList.add('active');active=button.dataset.filter;filterCards();
+}));
+</script>
+</body></html>
